@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video Player</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: #f8f8f8;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        animation: colorful 4s infinite forwards ease;
+        color: violet;
+      }
+      @keyframes colorful {
+        15% {
+          color: indigo;
+        }
+        30% {
+          color: blue;
+        }
+        45% {
+          color: green;
+        }
+        60% {
+          color: orange;
+        }
+        75% {
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <video width="100%" height="350px" autoplay controls>
+      <source src="tr.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <a href="videoInfo.html" target="right">Click here to see Tags Used</a>
+  </body>
+</html>

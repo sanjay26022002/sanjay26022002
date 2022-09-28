@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lists</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: #f8f8f8;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      li {
+        margin: 0.5rem 0;
+      }
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        animation: colorful 4s infinite forwards ease;
+        color: violet;
+      }
+      @keyframes colorful {
+        15% {
+          color: indigo;
+        }
+        30% {
+          color: blue;
+        }
+        45% {
+          color: green;
+        }
+        60% {
+          color: orange;
+        }
+        75% {
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Unordered List</h2>
+    <ul>
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Orange</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <ol>
+      <li>Switch on power</li>
+      <li>Plug in the charger</li>
+      <li>(Phone starts charging)</li>
+    </ol>
+    <a href="listsInfo.html" target="right">Click here to see Tags Used</a>
+  </body>
+</html>

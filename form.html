@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Form</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <table align="center" bgcolor="00ffff" cellspacing="30">
+        <center><h1>Project Management</h1></center>
+
+        <tr>
+          <td>Project Name</td>
+
+          <td><input type="text" placeholder="Project Name" name="" /></td>
+        </tr>
+
+        <tr>
+          <td>Assigned To</td>
+
+          <td>
+            <select name="Assigned To">
+              <option name="Assigned To" value="Kevin">Kevin</option>
+
+              <option name="Assigned To" value="Robert">Robert</option>
+
+              <option name="Assigned To" value="Steve">Steve</option>
+
+              <option name="Assigned To" value="Tony">Tony</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Start Date</td>
+
+          <td><input type="Date" placeholder="Start Date" name="" /></td>
+        </tr>
+
+        <tr>
+          <td>End Date</td>
+
+          <td><input type="Date" placeholder="End Date" name="" /></td>
+        </tr>
+
+        <tr>
+          <td>Project Type</td>
+
+          <td>
+            <input type="checkbox" name="Project Type" />Simple
+
+            <input type="checkbox" name="Project Type" />Stand Alone
+
+            <input type="checkbox" name="Project Type" />Web Based
+
+            <input type="checkbox" name="Project Type" />Mobile App
+          </td>
+        </tr>
+
+        <tr>
+          <td>Priority</td>
+
+          <td>
+            <input type="radio" name="Priority" />High
+
+            <input type="radio" name="Priority" />Average
+
+            <input type="radio" name="Priority" />Low
+          </td>
+        </tr>
+
+        <tr>
+          <td>Description</td>
+
+          <td><textarea rows="10" cols="30"></textarea></td>
+        </tr>
+
+        <tr>
+          <td>Submit</td>
+
+          <td>
+            <input type="submit" value="Submit" name="" />
+
+            <input type="submit" value="clear" name="" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

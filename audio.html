@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Audio Player</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: #f8f8f8;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        animation: colorful 4s infinite forwards ease;
+        color: violet;
+      }
+      @keyframes colorful {
+        15% {
+          color: indigo;
+        }
+        30% {
+          color: blue;
+        }
+        45% {
+          color: green;
+        }
+        60% {
+          color: orange;
+        }
+        75% {
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="audImg.jpg" alt="songImage" />
+    <audio controls autoplay>
+      <source src="Kv.mp3" type="audio/mpeg" />
+    </audio>
+    <a href="audioInfo.html" target="right">Click here to see Tags Used</a>
+  </body>
+</html>

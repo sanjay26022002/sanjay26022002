@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tables</title>
+    <style>
+      * {
+        color: #dbd8e3;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      table,
+      th,
+      td {
+        border: solid 2px whitesmoke;
+        border-collapse: collapse;
+        text-align: center;
+        height: 23px;
+      }
+      caption {
+        margin: 0.55rem 0;
+      }
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        animation: colorful 4s infinite forwards ease ;
+        color: violet;
+      }
+      @keyframes colorful {
+        15% {
+          color: indigo;
+        }
+        30% {
+          color: blue;
+        }
+        45% {
+          color: green;
+        }
+        60% {
+          color: orange;
+        }
+        75%{
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <caption>
+        Table
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <tr>
+        <td>Jack</td>
+        <td>18</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>Rose</td>
+        <td>18</td>
+        <td>Female</td>
+      </tr>
+    </table>
+    <table style="width: 50%">
+      <caption>
+        Coloumn span
+      </caption>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Rose</td>
+        <td>Black</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>Jenni</td>
+        <td>Kelly</td>
+        <td>17</td>
+      </tr>
+    </table>
+    <table style="width: 50%">
+      <caption>
+        Row span
+      </caption>
+      <tr>
+        <th>Name</th>
+        <td>Jelly</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Parents</th>
+        <td>Julia</td>
+      </tr>
+      <tr>
+        <td>Reaper</td>
+      </tr>
+    </table>
+    <a href="tablesInfo.html" target="right">Click here to see Tags Used</a>
+  </body>
+</html>
